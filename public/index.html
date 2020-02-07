@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>Home Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<div id="iPhone">
+		<div id="topBar"></div>
+		<p id="selectTitle">Select your favorite: <br> <b>Game Genres</b>: </p>
+		
+		<!-- row 1 -->
+		<div class="button" id="button1" style="left: 35px; top: 10px;" onclick="change_css()">
+			<p class="buttonItem">Action</p>
+		</div>
+		<div class="button" id="button2" style="left: 195px; top: -130px;" onclick="change_css()">
+			<p class="buttonItem">Adventure</p>
+		</div>
+		<!-- row 2 -->
+		<div class="button" id="button3" style="left: 35px; top: -120px;">
+			<p class="buttonItem">Casual</p>
+		</div>
+		<div class="button" id="button4" style="left: 195px; top: -260px;" onclick="change_css()">
+			<p class="buttonItem">Puzzle</p>
+		</div>
+		<!-- row 3 -->
+		<div class="button" id="button5" style="left: 35px; top: -250px;">
+			<p class="buttonItem">Racing</p>
+		</div>
+		<div class="button" id="button6" style="left: 195px; top: -390px;" onclick="change_css()">
+			<p class="buttonItem">RPG</p>
+		</div>
+		<!-- row 4 -->
+		<div class="button" id="button7" style="left: 35px; top: -380px;" onclick="change_css()">
+			<p class="buttonItem">Sports</p>
+		</div>
+		<div class="button" id="button8" style="left: 195px; top: -520px;">
+			<p class="buttonItem">Strategy</p>
+		</div>
+
+		<div id="bottombars">
+			<div id="apply">
+				<button onclick="cancel_css()" class="navButton">Cancel</button> <button id="yes" type="button" class="navButton">Apply</button>
+			</div>
+			<div id="navBar">
+				<button class="navButton">Friends</button> <button class="navButton">Communities</button> <button class="navButton">Profile</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function change_css(){
+            document.getElementById('button1').style.cssText = 
+				'position: relative; width: 124px; height: 124px; left: 35px; top: 10px; background: #0084E4; box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25); border-radius: 20px;';
+			document.getElementById('button2').style.cssText = 
+				'position: relative; width: 124px; height: 124px; left: 195px; top: -130px; background: #0084E4; box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25); border-radius: 20px;';
+			document.getElementById('button4').style.cssText = 
+				'position: relative; width: 124px; height: 124px; left: 195px; top: -260px; background: #0084E4; box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25); border-radius: 20px;';
+			document.getElementById('button6').style.cssText = 
+				'position: relative; width: 124px; height: 124px; left: 195px; top: -390px; background: #0084E4; box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25); border-radius: 20px;';
+			document.getElementById('button7').style.cssText = 
+				'position: relative; width: 124px; height: 124px; left: 35px; top: -380px; background: #0084E4; box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25); border-radius: 20px;';
+		
+			document.getElementById('yes').addEventListener("click", function () {
+				window.location.href = 'matches.html';
+			});
+
+		}
+
+		function cancel_css() {
+			var x, i;
+			x = document.querySelectorAll("div.button");
+			for(i = 0; i < x.length; i++) {
+				x[i].style.background = "#FFFFFF";
+				x[i].setAttribute("box-shadow", "7px 7px 8px rgba(0, 0, 0, 0.25);"); 
+				x[i].setAttribute("border-style", "solid");
+			}
+
+		}
+
+	</script>
+</body>
+</html>

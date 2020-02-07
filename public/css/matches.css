@@ -1,0 +1,63 @@
+div.match {
+    width: 345px;
+    height: 120px;
+    background-color: lightgray;
+}
+
+#square {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    background: white;
+    float:left;
+}
+
+h2 {
+    font-family: Open sans;
+    padding-top: 20px;
+}
+
+h5 {
+    font-weight: 1;
+    font-family: Open sans;
+    padding-top: 0px;
+}
+
+
+div.info {
+    margin-left: 50px;
+    padding-left: 70px;
+}
+
+.add {
+    float: right;
+    background: #F3F3F3;
+    border:2px;
+    border-color: black;
+    padding: 5px 20px;
+    margin-top: 3px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 12px;
+    font-family: Open Sans;
+    border-radius: 18px;
+}
+
+.added {
+    float: right;
+    background: #0084E4;
+    border:2px;
+    border-color: black;
+    padding: 5px 20px;
+    margin-top: 3px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: Open Sans;
+    border-radius: 18px;
+}

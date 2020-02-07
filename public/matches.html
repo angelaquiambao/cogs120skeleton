@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Matches Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/matches.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<div id="iPhone">
+		<div id="topBar"><h5 style="font-family: Open Sans; margin-top: 0px;"><a href="index.html">&#8592; Game Genres</a></p></div>
+		<p id="selectTitle"><b>Party Up!</b></p>
+		<p id="selectTitle" style="font-size: 18px; margin-top: -30px; padding-bottom:10px; line-height: 30px;">We found some compatible teammates.</p>
+		
+		<div class="match">
+			<div id="square"></div>
+			<div class="info">
+				<h2>A. Dude <button class="add" onclick="addFriend(this)">+ Add</button></h2>
+				<h5>Action, Adventure, Puzzle, RPG...</h5>
+			</div>
+		</div>
+
+		<div class="match">
+			<div id="square"></div>
+			<div class="info">
+				<h2>B. Nice <button class="add" onclick="addFriend(this)">+ Add</button></h2>
+				<h5>Action, Adventure, Puzzle, RPG...</h5>
+			</div>
+		</div>
+
+		<div class="match">
+			<div id="square"></div>
+			<div class="info">
+				<h2>C. Yu <button class="add" onclick="addFriend(this)">+ Add</button></h2>
+				<h5>Puzzle, RPG, Sports</h5>
+			</div>
+		</div>
+
+		<div class="match">
+			<div id="square"></div>
+			<div class="info">
+				<h2>D. Dude <button class="add" onclick="addFriend(this)">+ Add</button></h2> 
+				<h5>RPG, Sports</h5>
+			</div>
+		</div>
+
+		<div id="bottombars">
+			<div id="navBar" style="top: 20px;">
+				<button class="navButton">Friends</button> <button class="navButton">Communities</button> <button class="navButton">Profile</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function addFriend(elementObj) {
+			if(elementObj.innerHTML == "+ Add") {
+				elementObj.innerHTML = "&#10003; Added"
+				elementObj.className = "added";
+			}
+			else {
+				elementObj.innerHTML = "+ Add";
+				elementObj.className = "add";
+			} 
+		}
+	</script>
+</body>
+</html>
